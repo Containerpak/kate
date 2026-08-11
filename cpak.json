@@ -3,7 +3,7 @@
   "manifest_version": "2.0",
   "name": "Kate",
   "description": "A full-featured text editor with projects, sessions and an integrated terminal.",
-  "version": "25.12.3",
+  "version": "26.04.2",
   "image": "ghcr.io/containerpak/kate:main",
   "binaries": ["/usr/bin/kate"],
   "desktop_entries": ["/usr/share/applications/org.kde.kate.desktop"],

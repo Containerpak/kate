@@ -1,4 +1,4 @@
-FROM ghcr.io/containerpak/mesa-sdk:main AS build
+FROM ghcr.io/containerpak/mesa64-sdk:main AS build
 
 ARG DEBIAN_FRONTEND=noninteractive
 ARG KATE_URL=https://download.kde.org/stable/release-service/26.04.2/src/kate-26.04.2.tar.xz
@@ -24,7 +24,7 @@ RUN apt-get update && \
     cmake --build /tmp/kate/build && \
     DESTDIR=/out cmake --install /tmp/kate/build
 
-FROM ghcr.io/containerpak/mesa:main
+FROM ghcr.io/containerpak/mesa64:main
 
 ARG DEBIAN_FRONTEND=noninteractive
 

@@ -1,26 +1,28 @@
 {
-  "$schema": "https://raw.githubusercontent.com/Containerpak/cpak/v2/schema/manifest-v2.json",
-  "manifest_version": "2.0",
+  "$schema": "https://raw.githubusercontent.com/Containerpak/cpak/v2/schema/manifest-v3.json",
+  "manifest_version": "3.0",
   "name": "Kate",
   "description": "A full-featured text editor with projects, sessions and an integrated terminal.",
   "version": "26.08.0",
-  "image": "ghcr.io/containerpak/kate:main",
-  "binaries": ["/usr/bin/kate"],
-  "desktop_entries": ["/usr/share/applications/org.kde.kate.desktop"],
+  "image": "ghcr.io/containerpak/kate@sha256:507223cdad942ee3be4d0c20cb1e90d76974920757dc17b79f183df129322746",
+  "binaries": [
+    "/usr/bin/kate"
+  ],
+  "desktop_entries": [
+    "/usr/share/applications/org.kde.kate.desktop"
+  ],
   "dependencies": [],
-  "addons": ["github.com/containerpak/sdk-go", "github.com/containerpak/sdk-node-lts"],
+  "addons": [
+    "github.com/containerpak/sdk-go",
+    "github.com/containerpak/sdk-node-lts"
+  ],
   "idle_time": 0,
   "override": {
-    "socketX11": true,
     "socketWayland": true,
     "socketPulseAudio": false,
-    "socketSessionBus": true,
-    "socketSystemBus": false,
     "socketSshAgent": true,
     "socketCups": false,
     "socketGpgAgent": true,
-    "socketAtSpiBus": true,
-    "socketBluetooth": false,
     "deviceDri": true,
     "deviceKvm": false,
     "deviceShm": false,
@@ -32,7 +34,12 @@
     "deviceAll": false,
     "notification": false,
     "openURI": true,
-    "filesystem": [{"path": "home", "access": "read-write"}],
+    "filesystem": [
+      {
+        "path": "home",
+        "access": "read-write"
+      }
+    ],
     "env": [],
     "network": true,
     "process": false,
@@ -40,7 +47,6 @@
     "memoryMaxMB": 0,
     "cpuQuota": 0,
     "pidsMax": 0,
-    "asRoot": false,
-    "allowedHostCommands": ["xdg-open"]
+    "asRoot": false
   }
 }

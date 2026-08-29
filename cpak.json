@@ -18,11 +18,13 @@
   ],
   "idle_time": 0,
   "override": {
+    "displayX11": false,
     "socketWayland": true,
     "socketPulseAudio": false,
     "socketSshAgent": true,
     "socketCups": false,
     "socketGpgAgent": true,
+    "bluetooth": false,
     "deviceDri": true,
     "deviceKvm": false,
     "deviceShm": false,
@@ -31,9 +33,13 @@
     "deviceFuse": false,
     "deviceTun": false,
     "deviceUsb": false,
+    "deviceSerial": false,
+    "deviceInput": false,
+    "deviceTTY": false,
     "deviceAll": false,
     "notification": false,
     "openURI": true,
+    "hostApplications": false,
     "filesystem": [
       {
         "path": "home",

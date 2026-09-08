@@ -4,7 +4,7 @@
   "name": "Kate",
   "description": "A full-featured text editor with projects, sessions and an integrated terminal.",
   "version": "26.08.0",
-  "image": "ghcr.io/containerpak/kate@sha256:f2df8502e38a6157ac6f275a71ea679dc8ab17ff00cfbfdc45c2d22050d39f49",
+  "image": "ghcr.io/containerpak/kate@sha256:4ef95bd19e3fb5a3efc3bb641953aa2deac6298c305411a0833857402d004ffa",
   "binaries": [
     "/usr/bin/kate"
   ],

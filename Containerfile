@@ -1,8 +1,8 @@
 FROM ghcr.io/containerpak/mesa64-sdk:main AS build
 
 ARG DEBIAN_FRONTEND=noninteractive
-ARG KATE_URL=https://download.kde.org/stable/release-service/26.08.0/src/kate-26.08.0.tar.xz
-ARG KATE_SHA256=abe6ceb81155eaa4c046fbff21deaed2a1cd3b031f732acfb95aa283e68d0f52
+ARG KATE_URL=https://download.kde.org/stable/release-service/26.08.1/src/kate-26.08.1.tar.xz
+ARG KATE_SHA256=b7d690761e37c29b425375ee42b959b59a9de693789de86e0fb826bace5b3d7f
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
